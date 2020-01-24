@@ -10,6 +10,7 @@ import io.circe.syntax._
 import org.http4s.dsl.io._
 
 case class ComputationRequest(computation: String)
+
 sealed trait ComputationResponse
 
 case class ComputationResponseOk(result: String) extends ComputationResponse
@@ -42,6 +43,7 @@ object CalculatorApp extends IOApp {
         case "/" => left / right
       }}
     }
+
     val withoutSpace = input.computation.replaceAll("\\s+", "")
     val parseResult = parse(withoutSpace, expr(_))
     parseResult match {
