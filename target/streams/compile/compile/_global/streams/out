@@ -1,0 +1,13 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Volumes/BdeB/documents pour la formation/Scala/MyFirst/src/main/scala/Tweet.scala:29:40: Reference to uninitialized value cs[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val tweetService = HttpRoutes.of[IO] {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Volumes/BdeB/documents pour la formation/Scala/MyFirst/src/main/scala/Tweet.scala:36:45: Reference to uninitialized value cs[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val helloWorldService = HttpRoutes.of[IO] {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Volumes/BdeB/documents pour la formation/Scala/MyFirst/src/main/scala/Tweet.scala:41:18: Reference to uninitialized value cs[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val services = tweetService <+> helloWorldService[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Volumes/BdeB/documents pour la formation/Scala/MyFirst/src/main/scala/Tweet.scala:43:23: Reference to uninitialized value cs[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val httpApp = Router("/" -> helloWorldService, "/api" -> services).orNotFound[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
